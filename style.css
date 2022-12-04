@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid red; */
+}
+
+body{
+    background-color: #191815;
+}
+
+/* links */
+.links{
+    position:fixed;
+    left: 2.5rem;
+    bottom: 0;
+}
+.links>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link-icons{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-icons>svg{
+    margin: 0.5rem 0;
+}
+.links-line{
+    height: 120px;
+    width: 5px;
+    background-color: #ffc815;
+}
+
+/* about */
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.logo>div{
+    width: 60%;
+    background-color: #ffc815;
+    color: #3b3a37;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a span{
+    color: #ffc815;
+    margin-right: 0.2rem;
+}
+nav ul a{
+    text-decoration: none;
+    color: #3b3a37;
+    margin-right: 0.9rem;
+}
+
+.about_content{
+width: 78%;
+margin: 5rem auto;
+color: #f1f0eb;
+}
+
+.bouncing-text {
+    position: relative;
+    display: flex;
+    font-size: 70px;
+    font-family: arial black;  
+    cursor: pointer;
+    text-shadow: -20px 10px 10px rgb(0 0 0 / 30%), 0 20px 50px rgb(0 0 0 / 30%);
+  }
+
+  @keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-55px);}
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    58%  { transform: scale(1,1) translateY(-7px); }
+    65%  { transform: scale(1,1) translateY(0);}
+    100% { transform: scale(1,1) translateY(0);}
+}
+
+
+.s {
+animation: bounce 1s ease 1;
+}
+.s:hover{
+    animation: bounce 1.5s ease infinite;
+   }
+
+.a {
+    animation: bounce 1s ease 1 .1s;
+}
+.a:hover {
+    animation: bounce 1s ease infinite .1s;
+}
+
+.m {
+animation: bounce 1s ease 1 .2s;
+}
+
+.m:hover {
+animation: bounce 1s ease infinite .2s;
+}
+
+.h {
+animation: bounce 1s ease 1 .3s;
+}
+
+.i {
+animation: bounce 1s ease 1 .4s;
+}
+
+.t {
+animation: bounce 1s ease 1 .5s;
+}
+.h2 {
+animation: bounce 1s ease 1 .6s;
+}
