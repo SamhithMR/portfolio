@@ -302,8 +302,87 @@ nav ul a {
 }
 
 
+/* works */
+.works {
+    width: 90%;
+    margin-left: auto;
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+
+}
+
+.sidebar {
+    position: absolute;
+    right: 0;
+    width: 6rem;
+    height: 90%;
+    background-color: #ffc815;
+}
+.sidebar h1{
+    position: absolute;
+    right: 1rem;
+    writing-mode: vertical-lr;
+    font-size: 8rem;
+    font-weight: 900;
+    color: #3b3a37;
+}
 
 
+
+
+/* services */
+
+.services {
+    position: relative;
+    background: linear-gradient(to left, #191815 40%, #242525 0%);
+}
+
+.services>h1 {
+    color: #ffc815;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: -8%;
+    left: 47.5%;
+}
+
+.services_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 45% 25% 25%;
+}
+
+.services_container div h1 {
+    display: block;
+}
+
+.services_container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    min-height: 2rem;
+    background-color: #3b3a37;
+    border-radius: 2px;
+    text-align: center;
+    color: #ffc815;
+}
+
+.services_container div:first-of-type {
+    grid-area: 1/1/3/2;
+    background-color: #242525;
+    /* align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center; */
+    font-size: 1.3em;
+    font-weight: 900;
+}
 
 
 
