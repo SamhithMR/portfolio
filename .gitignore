@@ -2,3 +2,5 @@ xyz.css
 xyz.html
 webfont.js
 ./assets/*.svg
+./assets/photography/*.jpg
+*.jpg
