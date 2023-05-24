@@ -5,297 +5,333 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./assets/logo.png">
     <title>samhith protfolio</title>
+
 </head>
 
 <body>
-    <!-- about section -->
-    <section aria-label="about">
-        <div class="about">
-            <div class="navbar">
-                <div class="logo">
-                    <p></p>
-                    <p>Contact me!</p>
-                    <img src="./assets/logo.png" alt="" srcset="">
-                    <p>github</p>
-                    <p>linkedin</p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="about_content">
-                <div class="my_name">
-                    <h2>Hi there, I'm</h2>
-                    <div class="bouncing-text">
-                        <div class="n s">
-                            <div>s</div>
-                        </div>
-                        <div class="n a">
-                            <div>a</div>
-                        </div>
-                        <div class="n m">
-                            <div>m</div>
-                        </div>
-                        <div class="n h">
-                            <div>h</div>
-                        </div>
-                        <div class="n i">
-                            <div>i</div>
-                        </div>
-                        <div class="n t">
-                            <div>t</div>
-                        </div>
-                        <div class="n h2">
-                            <div>h</div>
-                        </div>
-                    </div>
-                    <div class="profile"><img src="./assets/sam7.png" alt="" srcset=""></div>
-                    <p>Proffesional front-end developer</p>
-                    <div class="role_line"></div>
-                    <div class="role_line2"></div>
-                </div>
-                <div class="lists" style="position: absolute; left: 5rem; top: 10rem;">
-                    <p class="domain">product design</p>
-                    <p class="domain">UI/UX</p>
-                    <p class="domain">frontend</p>
-                    <p class="domain">backend</p>
-                </div>
-                <h1 class="portfolio">PORTFOLIO</h1>
-                <div class="about_me">
-                    <p>
-                        <!-- A professional Front-End Developer with over a year of experience in web development. I'm passionate about technology and aspire to become a full-stack JavaScript developer. I'm actively seeking opportunities to join a dynamic and innovative firm as a Front-End Developer, where I can contribute my skills and drive towards creating impactful web experiences.</p> -->
-                        <!-- <h5 class="more_about_me">more about me</h5> -->
-                </div>
-            </div>
+    <div class="body_wrapper">
+        <!-- navigation -->
+        <div class="navigator">
+            <div class="nav_design"></div>
+            <button class="nav-btn nav_active" data-section="about">01</button>
+            <button class="nav-btn" data-section="works">02</button>
+            <button class="nav-btn" data-section="contact">03</button>
+            <div class="nav_design"></div>
         </div>
-    </section>
-
-    <section>
-        <div>
-            <div class="servicess">
-                A professional Front-End Developer with over a year of experience in web development. I'm passionate
-                about technology and aspire to become <br> a full-stack JavaScript developer. I'm actively seeking
-                opportunities to join a dynamic and innovative firm as a Front-End Developer,<br> where I can contribute
-                my skills and drive towards creating impactful web experiences.,<br>contribute my skills and drive
-                towards creating impactful web experiences.
-            </div>
-        </div>
-    </section>
-
-    <!-- work -->
-    <section>
-        <div class="work">
-            <div class="work_left">
-                <div class="work_cards">
-                    <div class="work_card">
-                        <div class="work_mask"></div>
-                        <img src="./assets/work_1.png" alt="" srcset="">
-                        <p class="work_line"></p>
-                        <h5 class="work_heading">FilmCritics</h5>
-                        <p class="work_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab
-                            veritatis nihil corrupti id est autem ea nulla iusto vel, quae, sequi eligendi, neque
-                            dolorem!</p>
-                        <p class="work_tech">reactJS, redux, javascript</p>
+        <!-- main container -->
+        <div class="container">
+            <!-- 1.Header -->
+            <section id="about">
+                <div class="header">
+                    <h1 class="portfolio_bg">PORTFOLIO</h1>
+                    <div class="services">
+                        <p class="domain" id="domain1">product designing</p>
+                        <p class="domain" id="domain2">UI/UX designing</p>
+                        <p class="domain" id="domain3">frontend developer</p>
+                        <p class="domain" id="domain4">backend developer</p>
                     </div>
-                    <div class="work_card">
-                        <div class="work_mask"></div>
-                        <img src="./assets/prev1.png
-                       " alt="" srcset="">
-                        <p class="work_line"></p>
-                        <h5 class="work_heading">Spotivize</h5>
-                        <p class="work_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab
-                            veritatis nihil corrupti id est autem ea nulla iusto vel, quae, sequi eligendi, neque
-                            dolorem!</p>
-                        <p class="work_tech">reactJS, redux, javascript</p>
-                    </div>
-                    <div class="work_card">
-                        <div class="work_mask"></div>
-                        <img src="./assets/work_3.png" alt="" srcset="">
-                        <p class="work_line"></p>
-                        <h5 class="work_heading">DoiT</h5>
-                        <p class="work_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ab
-                            veritatis nihil corrupti id est autem ea nulla iusto vel, quae, sequi eligendi, neque
-                            dolorem!</p>
-                        <p class="work_tech">reactJS, redux, javascript</p>
-                    </div>
-                </div>
-                <div class="work_sidebar"></div>
-            </div>
-            <div class="work_right">
-                <h1>WORKS</h1>
-                <div class="work_right_top">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis praesentium vel iure, consequatur
-                    illo veniam minima error hic. Illo saepe assumenda quos aliquid? Culpa laudantium temporibus
-                    molestias amet,
-                    Illo saepe assumenda quos aliquid? Culpa laudantium temporibus molestias amet, Illo saepe assumenda
-                    quos aliquid? Culpa laudantium temporibus molestias amet,
-                </div>
-                <div class="work_right_bottom">
-                    <!-- <div class="work_skills"> HTML CSS JavaScript MYSQL ReatJS NodeJS git github  photoshop expressJS TailwindCSS zustand redux  mongoose rainmeter python typscript mongoDB PHP laravel abcd efgh</div> -->
-                    <div class="min_proj">
-                        <div>
-                            <h5>paytm clone</h5>
-                            <div>
-                                <img src="./assets/github.svg" alt="" srcset="">
-                                <img src="./assets/github.svg" alt="" srcset="">
+                    <div class="name">
+                        <div class="name_content">
+                            <h2>Hi there, I'm</h2>
+                            <div class="bouncing-text">
+                                <div class="n s">
+                                    <div>s</div>
+                                </div>
+                                <div class="n a">
+                                    <div>a</div>
+                                </div>
+                                <div class="n m">
+                                    <div>m</div>
+                                </div>
+                                <div class="n h">
+                                    <div>h</div>
+                                </div>
+                                <div class="n i">
+                                    <div>i</div>
+                                </div>
+                                <div class="n t">
+                                    <div>t</div>
+                                </div>
+                                <div class="n h2">
+                                    <div>h</div>
+                                </div>
+                            </div>
+                            <p>Proffesional front-end developer</p>
+                            <div class="name_design">
+                                <div class="role_line1"></div>
+                                <div class="role_line2"></div>
                             </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, animi nesciunt vitae fugit
-                            cumque debitis corporis nisi harum maiores ab.</p>
-                    </div>
-                    <div class="min_proj">
-                        <div>
-                            <h5>1-on-1 personal training</h5>
-                            <div>
-                                <img src="./assets/github.svg" alt="" srcset="">
-                                <img src="./assets/github.svg" alt="" srcset="">
-                            </div>
+                        <div class="profile">
+                            <img src="./assets/sam7.png" alt="" srcset="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, animi nesciunt vitae fugit
-                            cumque debitis corporis nisi harum maiores ab.</p>
                     </div>
-                    <div class="min_proj">
-                        <div>
-                            <h5>shopify clone</h5>
-                            <div>
-                                <img src="./assets/github.svg" alt="" srcset="">
-                                <img src="./assets/github.svg" alt="" srcset="">
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, animi nesciunt vitae fugit
-                            cumque debitis corporis nisi harum maiores ab.</p>
+                    <div class="navbar">
+                        <a href="#contact">Contact me!</a>
+                        <a href="/"><img src="./assets/logo.png" alt="" srcset=""></a>
+                        <a href="https://www.github.com/samhithMR" target="_blank">github</a>
+                        <a href="https://www.linkedin.com/in/samhith-mr" target="_blank">linkedin</a>
                     </div>
-                    <div class="min_proj">
-                        <div>
-                            <h5>typing speed test</h5>
-                            <div>
-                                <img src="./assets/github.svg" alt="" srcset="">
-                                <img src="./assets/github.svg" alt="" srcset="">
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, animi nesciunt vitae fugit
-                            cumque debitis corporis nisi harum maiores ab.</p>
-                    </div>
-                    <!-- <div class="works_viewM">
-                                    click here
-                                </div> -->
-                    <div class="min_proj">
-                        <div>
-                            <h5>NGO website</h5>
-                            <div>
-                                <img src="./assets/github.svg" alt="" srcset="">
-                                <img src="./assets/github.svg" alt="" srcset="">
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, animi nesciunt vitae fugit
-                            cumque debitis corporis nisi harum maiores ab.</p>
-                    </div>
-                    <h2 class="work_recent">RECENT</h2>
                 </div>
-            </div>
-            <div class="work_right_design">
-                <div class="work_design_img">
-                    <img src="./assets/designer (2).png" alt="" srcset="">
+                <!-- 2.about -->
+                <div class="about">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique atque, tempore aut, fugiat
+                        eius
+                        asperiores non omnis commodi nobis laudantium, inventore fuga sunt eaque? Doloremque aliquam at
+                        quo
+                        tempore pariatur placeat officiis praesentium eius laboriosam, voluptatibus ab, perspiciatis
+                        possimus odio.</p>
                 </div>
-            </div>
-            <div class="work_right_design" style="bottom:-68vh">
-                <h1>BLOGS</h1>
-            </div>
-            <div class="work_right_design" style="bottom:-92vh">
-                <div class="work_design_img">
-                    <img src="./assets/designer (2).png" alt="" srcset="">
+            </section>
+            <section id="works">
+                <!-- work -->
+                <div class="works">
+                    <div class="works_left">
+                        <div class="works_about">
+                            <h1>WORKS</h1>
+                            <div>I offer comprehensive services in front-end and back-end development, product design,
+                                and UI/UX design. With a focus on creating engaging user experiences and using
+                                cutting-edge technologies, I deliver top-notch websites and captivating designs to meet
+                                clients' unique needs.</div>
+                        </div>
+                        <div class="main_works">
+                            <div class="work_cards">
+                                <div class="work_card">
+                                    <img src="./assets/work_1.png" alt="" srcset="">
+                                    <div class="work_info">
+                                        <h5 class="work_heading">FilmCritics</h5>
+                                        <p class="work_desc">Developed a movie recommendation system with ReactJS, leveraging OpenAI's ChatGPT and TMDB API for data retrieval.</p>
+                                        <p class="work_tech">reactJS, javascript, OpenAI & TMDB API</p>
+                                    </div>
+                                    <div class="work_icons">
+                                        <a href="https://github.com/SamhithMR/filmCritic" target="_blank">
+                                            <img src="./assets/github1.svg" alt="" srcset="">
+                                        </a>
+                                        <a href="https://filmcritics.netlify.app/" target="_blank">
+                                            <img src="./assets/share.svg" alt="" srcset="">
+                                        </a>
+                                    </div>
+                                    <p class="work_line"></p>
+                                </div>
+                                <div class="work_card">
+                                    <img src="./assets/prev1.png" alt="" srcset="">
+                                    <p class="work_line"></p>
+                                    <div class="work_icons">
+                                        <a href="https://github.com/SamhithMR/spotivize" target="_blank">
+                                            <img src="./assets/github1.svg" alt="" srcset="">
+                                        </a>
+                                        <a href="https://spotivize.netlify.app/" target="_blank">
+                                            <img src="./assets/share.svg" alt="" srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="work_info">
+                                        <h5 class="work_heading">Spotivize</h5>
+                                        <p class="work_desc">Built an interactive music dashboard using D3.js and Spotify API, offering personalized data visualization and insights.</p>
+                                        <p class="work_tech">D3.js react.js spotify API</p>
+                                    </div>
+                                </div>
+                                <div class="work_card">
+                                    <img src="./assets/work_3.png" alt="" srcset="">
+                                    <p class="work_line"></p>
+                                    <div class="work_icons">
+                                        <a href="https://github.com/SamhithMR/react-todo-app" target="_blank">
+                                            <img src="./assets/github1.svg" alt="" srcset="">
+                                        </a>
+                                        <a href="https://samhith40.netlify.app/" target="_blank">
+                                            <img src="./assets/share.svg" alt="" srcset="">
+                                        </a>
+                                    </div>
+                                    <div class="work_info">
+                                        <h5 class="work_heading">DoiT</h5>
+                                        <p class="work_desc">Built the full-stack application DoiT using Node.js, React.js, Express.js, and MongoDB for managing tasks and todos.</p>
+                                        <p class="work_tech">Node.js, react.js, Express.js</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards_design">
+                                <h1>WORKS</h1>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h1>SKILLS</h1>
+                            <p>HTML CSS JavaScript MYSQL ReatJS NodeJS git github photoshop expressJS TailwindCSS
+                                zustand redux mongoose
+                                rainmeter python NodeJS git github photoshop expressJS TailwindCSS zustand redux</p>
+                        </div>
+                    </div>
+                    <div class="works_right">
+                        <div class="works_right_content">
+                            <div class="works_right_type1">
+                                I offer comprehensive services in front-end and back-end development, product design,
+                                and UI/UX design. With a focus on creating engaging user experiences and using
+                                cutting-edge technologies, I deliver top-notch websites and captivating designs to meet
+                                clients' unique needs.
+                            </div>
+                            <div class="works_right_type2">
+                                <div class="min_proj">
+                                    <div>
+                                        <h5>paytm clone</h5>
+                                        <div>
+                                            <a href="https://github.com/SamhithMR/paytm-clone" target="_blank">
+                                                <img src="./assets/github1.svg" alt="" srcset="">
+                                            </a>
+                                            <a href="https://samhith16.netlify.app/" target="_blank">
+                                                <img src="./assets/share.svg" alt="" srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Responsive Paytm clone built with Tailwind CSS, offering a seamless user experience across various devices.</p>
+                                </div>
+                                <div class="min_proj">
+                                    <div>
+                                        <h5>TypoTest</h5>
+                                        <div>
+                                            <a href="https://github.com/SamhithMR/typing_game" target="_blank">
+                                                <img src="./assets/github1.svg" alt="" srcset="">
+                                            </a>
+                                            <a href="https://samhith25.netlify.app/" target="_blank">
+                                                <img src="./assets/share.svg" alt="" srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, animi nesciunt
+                                        vitae fugit
+                                        cumque debitis corporis nisi harum maiores ab.</p>
+                                </div>
+                                <div class="min_proj">
+                                    <div>
+                                        <h5>MemoryMatch</h5>
+                                        <div>
+                                            <a href="https://github.com/SamhithMR/memory-card-game" target="_blank">
+                                                <img src="./assets/github1.svg" alt="" srcset="">
+                                            </a>
+                                            <a href="https://samhith35.netlify.app/" target="_blank">
+                                                <img src="./assets/share.svg" alt="" srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, animi nesciunt
+                                        vitae fugit
+                                        cumque debitis corporis nisi harum maiores ab.</p>
+                                </div>
+                                <div class="min_proj">
+                                    <div>
+                                        <h5>FitCoach</h5>
+                                        <div>
+                                            <a href="https://github.com/SamhithMR/1-On-1-Personal-training" target="_blank">
+                                                <img src="./assets/github1.svg" alt="" srcset="">
+                                            </a>
+                                            <a href="http://samhith.infinityfreeapp.com/" target="_blank">
+                                                <img src="./assets/share.svg" alt="" srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>A dynamic, responsive website for personalized fitness training, designed with a creative UI/UX, using JavaScript, PHP, MySQL and HTML/CSS5.</p>
+                                </div>
+                                <div class="min_proj">
+                                    <div>
+                                        <h5>Karnataka Janashakthi</h5>
+                                        <div>
+                                            <a href="https://github.com/SamhithMR/karnatakajanashakthi" target="_blank">
+                                                <img src="./assets/github1.svg" alt="" srcset="">
+                                            </a>
+                                            <a href="http://karnatakajanashakthi.org/" target="_blank">
+                                                <img src="./assets/share.svg" alt="" srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>A freelance project delivering a dynamic and responsive news website for Karnataka Janashakthi, an NGO organization.</p>
+                                </div>
+                                <h2 class="work_recent">RECENT</h2>
+                                <a href="https://github.com/samhithMR" target="_blank"> <span class="arrow">&#8592;</span> 50 more</a>
+                            </div>
+                            <div class="works_right_type3">
+                                <div class="graphic_design">
+                                    <h1>Graphic designing</h1>
+                                    <div class="graphic_design1"></div>
+                                    <div class="graphic_design2"></div>
+                                </div>
+                                <div class="design_mask"></div>
+                                <img src="./assets/designer.png" alt="" srcset="">
+                            </div>
+                            
+                            <div class="works_right_type3">
+                                <div class="graphic_design">
+                                    <h1>Product designing</h1>
+                                    <div class="graphic_design1"></div>
+                                    <div class="graphic_design2"></div>
+                                </div>
+                                <div class="design_mask2"></div>
+                                <img class="label_design" src="./assets/label_coconut.jpg" alt="" srcset="">
+                            </div>
+                            <div class="works_right_type4">
+                                <p>Passionate technical blogger sharing insights and tutorials on JavaScript, web development, and popular frameworks. Unlock the power of web with informative and engaging content.</p>
+                                <a href="https://samhith.hashnode.dev/" target="_blank">view all &#x2192;</a>
+                             </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- skills -->
-    <div class="skills">
-        <h1>SKILLS</h1>
-        <!-- <p class="things_that_i_use">thing that i use</p> -->
-        <p>HTML CSS JavaScript MYSQL ReatJS NodeJS git github photoshop expressJS TailwindCSS zustand redux mongoose
-            rainmeter python NodeJS git github photoshop expressJS TailwindCSS zustand redux</p>
-    </div>
-
-    <!-- photography section -->
-    <section aria-label="photography">
-        <div class="photography_cover">
-            <div class="photography">
-                <h1>Photography</h1>
-                <div class="photography_photo">
+                <!-- photography -->
+                <div class="photography">
                     <img src="./assets/img_2.jpg" alt="" srcset="">
+                    <h1>photography</h1>
+                    <p>As a passionate photographer, I find joy in capturing precious moments and freezing them in time. While not a professional, I have dedicated years to honing my skills and exploring various photography styles, especially macro photography. Although not driven by financial gain, I thoroughly enjoy the process and the creative freedom it offers. With a camera in hand, I immerse myself in the art of photography, constantly learning and capturing moments that hold personal significance.</p>
                 </div>
-                <div class="photography_content">
-                    <p>
-                        I like to capture the moment. Over the last years I did a lot photos.
-                        A lot of these are not really valuable but that’s not the point.
-                        It’s more like freezing the moment for later.
-                        I started with photography when I started riding a BMX. Thanks for that.
-                        Today I do it more „professional“ compared to the early days.
-                        But it’s just a hobby for me without any intention to earn money with it.
-
-                    </p>
+            </section>
+            <section id="contact">
+                <!-- contact -->
+                <div class="contact">
+                    <div class="contact_details">
+                        <div class="contact_heading">
+                            <div class="contact_icons">
+                                <div>
+                                    <a href=""></a>
+                                    <a href="https://www.github.com/samhithMR" target="_blank">
+                                        <img src="./assets/github.svg" alt="" srcset="">
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/samhith-mr" target="_blank">
+                                        <img src="./assets/linkedin.svg" alt="" srcset="">
+                                    </a>
+                                    <a href="https://www.instagram.com/samhith_mr/" target="_blank">
+                                        <img src="./assets/instagram.svg" alt="" srcset="">
+                                    </a>
+                                    <a href="https://www.instagram.com/samhith_mr/">
+                                        <img src="./assets/facebook.svg" alt="" srcset="">
+                                    </a>
+                                </div>
+                                <div class="location">Bengaluru, India</div>
+                            </div>
+                            <h1>CONTACT</h1>
+                            <p class="contact_design">drop an email at <span style="color:#f1df45">samhith.mr@gmail.com</span></p>
+                        </div>
+                        <div class="contact_dropMail">
+                            <p>If you're looking to connect, whether it's for freelance projects or full-time opportunities, feel free to drop me an email at <input type="text" placeholder="type you email">. As a versatile professional, I specialize in UI/UX design, front-end and back-end development, and product design. Your support and collaboration would be greatly appreciated. For further details, please refer to my resume.</p>
+                        </div>
+                        <button><a href="https://drive.google.com/file/d/19WzWPE0IkRuzs19ZuxuBpLbwi-upcf9H/view?usp=sharing" target="_blank">resume</a></button>
+                    </div>
+                    <div class="copyright">
+                        <p>@2023 designed and built by samhith <a href="https://github.com/samhithmr/portfolio" target="_blank"><img src="/assets/share.svg" ></a></p>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section aria-label="contact">
-        <div class="contact">
-            <h1>CONTACT</h1>
-            <div class="contact_links">
-                <img src="./assets/github.svg" alt="" srcset="">
-                <img src="./assets/facebook.svg" alt="" srcset="">
-                <img src="./assets/instagram.svg" alt="" srcset="">
-                <img src="./assets/linkedin.svg" alt="" srcset="">
-            </div>
-            <h3>designed and built by samhith</h3>
-        </div>
-    </section>
-
-    <!-- mouse over effect -->
-    <!-- <div id="foo" class="ball"></div> -->
-
-    <!-- links -->
-    <div class="links">
-        <div class="link_texts">
-            <div class="slideUp"></div>
-            <p>01</p>
-            <p style="color:#575656; font-size: 2.8rem;">02</p>
-            <p>03</p>
-            <div class="slideDown"></div>
+            </section>
+            <!-- <h1 class="t">abcdefghijklmnopqrstuvwxyz</h1>
+            <h1 class="g">abcdefghijklmnopqrstuvwxyz</h1>
+            <h1 class="l">abcdefghijklmnopqrstuvwxyz</h1>
+            <h1 class="c">abcdefghijklmnopqrstuvwxyz</h1>
+            <h1 class="b">abcdefghijklmnopqrstuvwxyz</h1> -->
         </div>
     </div>
 
-    <script>
-        let train = document.querySelectorAll(".n")
-        for (let i = 0; i < train.length; i++) {
-            train[i].addEventListener('mouseover', function () {
-                let start = Date.now();
-                let timer = setInterval(function () {
-                    let timePassed = Date.now() - start;
-                    train[i].classList.add("jumping");
-                    if (timePassed > 2000) {
-                        clearInterval(timer);
-                        train[i].classList.remove("jumping");
-                    }
-                }, 20);
-            }
-            );
-        }
-
-
-// mouse over effect
-//         const f = document.getElementById('foo');
-// document.addEventListener('mouseover', (ev) => {
-//   f.style.transform = `translateY(${ev.clientY - 25}px)`;
-//   f.style.transform += `translateX(${ev.clientX - 25}px)`;
-// }, false);
-
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+        integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
