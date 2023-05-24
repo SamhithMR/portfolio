@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 body {
@@ -672,7 +672,6 @@ nav ul a {
 
 .work_right_top {
     color: #888888;
-    ;
     font-weight: 400;
     font-size: 1rem;
     line-height: 25px;
