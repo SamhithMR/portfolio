@@ -2,9 +2,9 @@
 
 This is my personal portfolio website showcasing my projects and skills.
 
-
 # LIVE LINK
-https://samhith.netlify.app/
+
+https://samhith.in/
 <br>
 
 ## Features
@@ -20,4 +20,3 @@ https://samhith.netlify.app/
 - CSS3
 - JavaScript
 - GSAP (GreenSock Animation Platform)
-
