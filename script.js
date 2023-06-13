@@ -71,13 +71,33 @@ for (var i = 0; i < divElements.length; i++) {
     divElements[i].setAttribute('data-number', numbers[i]);
 }
 
+// function updateViewportWidth() {
+//     var viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+//     document.getElementById('viewport-height').textContent = viewportHeight + 'px';
+
+//     var viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+//     document.getElementById('viewport-width').textContent = viewportWidth + 'px';
+//   }
+//   updateViewportWidth();
+//   window.addEventListener('resize', updateViewportWidth);
 
 
-document.querySelector(".form-wrapper").innerHTML = `
-<form name="contact" method="POST" data-netlify="true" style="display: inline;">
-<input type="email" name="email" />
-<button type="submit">Send</button>
-</form>`
+var keywords3 = ["OpenAI", "D3.js"];
+var paragraph3 = document.documentElement;
+// keywords3.forEach(function (keyword) {
+//     var regex = new RegExp(keyword, "gi");
+//     paragraph3.innerHTML = paragraph3.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+// });
+
+
+
+// document.querySelector(".form-wrapper").innerHTML = `
+// <form name="contact" method="POST" data-netlify="true" style="display: inline;">
+// <input type="email" name="email" />
+// <button type="submit">Send</button>
+// </form>`
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,11 +107,12 @@ function animateServices() {
         duration: 1.2,
         opacity: 0.8,
         stagger: .1,
+        ease: "back(4)"
     })
 }
 
 function animateNavbar() {
-    gsap.from(".navbar *", {
+    gsap.from(".navbar>*", {
         x: -100,
         duration: 1.5,
         delay: 0.2,
@@ -141,7 +162,6 @@ var timeline = gsap.timeline();
 
 
 timeline
-
     .from(".cards_design>h1", {
         opacity: 0.3,
         letterSpacing: "-10vh",
@@ -151,6 +171,31 @@ timeline
             start: "top 80%",
             end: "5% 60%",
             toggleActions: "restart none none complete",
+            scrub: 4,
+        }
+    })
+
+    .fromTo(".services2 div", {
+        x: -300,
+        duration: 1,
+        stagger: 0.1,
+        scrollTrigger: {
+            trigger: ".services2",
+            start: "top bottom",
+            end: "top top",
+            toggleActions: "play pause resume complete",
+            scrub: 4,
+
+        }
+    }, {
+        x: 200,
+        duration: 1,
+        stagger: 0.1,
+        scrollTrigger: {
+            trigger: ".services2",
+            start: "top bottom",
+            end: "top top",
+            toggleActions: "play pause resume complete",
             scrub: 4,
         }
     })
@@ -165,7 +210,8 @@ timeline
             start: "top 90%",
             end: "30% 40%",
             toggleActions: "restart none none complete",
-            scrub: 4
+            scrub: 4,
+            // markers:true
         }
     })
     .from(".work_info *", {
@@ -186,7 +232,7 @@ timeline
         opacity: 0,
         x: -400,
         duration: .5,
-        stagger:0.2,
+        stagger: 0.2,
         scrollTrigger: {
             trigger: ".works",
             start: "top 90%",
@@ -242,7 +288,23 @@ timeline
         opacity: 0,
         x: 300,
         duration: 1,
+        delay: 1,
         stagger: 0.5,
+        scrollTrigger: {
+            trigger: ".skills",
+            start: "top 95%",
+            end: "top 50%",
+            toggleActions: "restart none none complete",
+            scrub: 4,
+            //   markers:true
+        }
+    })
+    .from(".skills p span", {
+        opacity: 0,
+        x: 500,
+        delay: 3,
+        duration: 2,
+        stagger: 0.1,
         scrollTrigger: {
             trigger: ".skills",
             start: "top 95%",
@@ -294,12 +356,12 @@ timeline
     })
     .from(".photography p", {
         opacity: 0,
-        x: -500,
+        x: -400,
         duration: 1,
         scrollTrigger: {
             trigger: ".photography",
-            start: "top 80%",
-            end: "top 25%",
+            start: "top 60%",
+            end: "top 30%",
             toggleActions: "restart none none complete",
             scrub: 4,
         }
@@ -332,12 +394,12 @@ timeline
     })
     .from(".contact_heading > * > *, .contact_details > a", {
         opacity: 0,
-        x: 300,
+        x: 100,
         duration: 3,
         stagger: 0.1,
         scrollTrigger: {
             trigger: ".photography",
-            start: "40% 35%",
+            start: "40% 45%",
             end: "bottom 80%",
             toggleActions: "restart none none complete",
             scrub: 4,
@@ -345,28 +407,28 @@ timeline
     })
     .from(".contact_dropMail", {
         opacity: 0,
-        x: 800,
+        x: 200,
         duration: 1,
         delay: 2,
         scrollTrigger: {
             trigger: ".photography",
-            start: "40% 30%",
+            start: "40% 55%",
             end: "bottom 80%",
             toggleActions: "restart none none complete",
             scrub: 3,
             // markers:true
         }
     })
-    .from(".copyright", {
+    .from(".copyright, .copyright2", {
         opacity: 0,
-        y: 300,
+        y: 200,
         duration: 1,
         delay: 2,
         scrollTrigger: {
             trigger: ".photography",
-            start: "40% 25%",
+            start: "40% 55%",
             end: "bottom 80%",
             toggleActions: "restart none none complete",
-            scrub: 3,
+            scrub: 5,
         }
     })
